@@ -1,4 +1,4 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -28,8 +28,8 @@ a<!DOCTYPE html>
         /* {
             transform: scale(0.9) !important;
         } */
-       
-        .Addressq{
+
+        .Addressq {
             transform: scale(0.8) !important;
         }
 
@@ -58,26 +58,26 @@ a<!DOCTYPE html>
 
             }
 
-          .rounde {
-            margin-bottom: 60px !important;
-          }
-        
+            .rounde {
+                margin-bottom: 60px !important;
+            }
+
         }
     </style>
 </head>
 
-<body class="Addressq" style="height: 100vh !important; overflow: hidden;" >
+<body class="Addressq" style="height: 100vh !important; overflow: hidden;">
     <div class="container">
         <div class="">
-            <div class="bg-dark logo rounded-5 rounde  mt-2 mx-auto " style="width: 300px !important; height: 50px  ;margin-bottom: 10px;">
-                <a href="./index.html"><img src="./icon/logo.png"
-                        class="w-75 mb-2 p-1 d-block mx-auto" alt=""></a>
+            <div class="bg-dark logo rounded-5 rounde  mt-2 mx-auto "
+                style="width: 300px !important; height: 50px  ;margin-bottom: 10px;">
+                <a href="./index.html"><img src="./icon/logo.png" class="w-75 mb-2 p-1 d-block mx-auto" alt=""></a>
             </div>
             <div class=" mx-auto">
                 <!-- Sign Up  Form -->
-                <div id="loginForm"   style="display: none;">
+                <div id="loginForm" style="display: none;">
                     <div class="contaner1 ">
-                        
+
 
                         <div class=" rounded-2 contaner5 ">
 
@@ -182,21 +182,21 @@ a<!DOCTYPE html>
                             </div>
 
                             <div class=" rounded-2 px-5 py-1 w-100 Addresc  mx-auto "
-                            style=" background-color: #50d7d7  ;padding:10px 0;margin-top: 10px;">
-                            <div class="row my-2 style-with">
-                                <a href="./index.html"
-                                    class="link col btn-danger rounded-5 p-2 text-center " id="confirmBtne"
-                                    style="display: none; ">Sign Up</a>
-                                <span class="col">
-                                </span>
-                                <a href="./index.html"
-                                    class="link col btn btn-outline-dark rounded-5 p-2 text-center ">Cancel</a>
+                                style=" background-color: #50d7d7  ;padding:10px 0;margin-top: 10px;">
+                                <div class="row my-2 style-with">
+                                    <a href="./index.html" class="link col btn-danger rounded-5 p-2 text-center "
+                                        id="confirmBtn" style="display: none; ">Sign Up</a>
+                                    <span class="col">
+                                    </span>
+                                    <a href="./index.html"
+                                        class="link col btn btn-outline-dark rounded-5 p-2 text-center ">Cancel</a>
+                                </div>
                             </div>
-                        </div>
 
                         </div>
 
-                        <p class="mt-3 w-50 mx-auto">Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+                        <p class="mt-3 w-50 mx-auto">Already have an account? <a href="#"
+                                onclick="toggleForm()">Login</a></p>
 
                     </div>
 
@@ -204,9 +204,9 @@ a<!DOCTYPE html>
                 </div>
 
                 <!--  Login Form -->
-                <div id="signupForm" >
+                <div id="signupForm">
                     <div class="contaner1 mt-2 ">
-                        
+
                         <div class=" rounded-2 contaner5 ">
                             <div class=" rounded-2 Addres  mx-auto "
                                 style=" background-color: #50d7d7 ;padding:10px 0; ">
@@ -260,19 +260,19 @@ a<!DOCTYPE html>
                             <div class=" rounded-2 px-5 py-1 w-100 Addresc  mx-auto "
                                 style=" background-color: #50d7d7  ;padding:10px 0;margin-top: 80px;">
                                 <div class="row my-2 style-with">
-                                    <a href="./index.html"
-                                        class="link col btn-danger rounded-5 p-2 text-center " id="confirmBtne"
-                                        style="display: none; ">sign in</a>
+                                    <a href="./index.html" class="link col btn-danger rounded-5 p-2 text-center "
+                                        id="confirmBtne" style="display: none; ">sign in</a>
                                     <span class="col">
                                     </span>
                                     <a href="./index.html"
                                         class="link col btn btn-outline-dark rounded-5 p-2 text-center ">Cancel</a>
                                 </div>
                             </div>
-                           
+
 
                         </div>
-                        <p class="mt-3 w-50 mx-auto">Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
+                        <p class="mt-3 w-50 mx-auto">Don't have an account? <a href="#" onclick="toggleForm()">Sign
+                                Up</a></p>
 
                     </div>
 
@@ -288,7 +288,7 @@ a<!DOCTYPE html>
         function toggleForm() {
             var loginForm = document.getElementById("loginForm");
             var signupForm = document.getElementById("signupForm");
-    
+
             if (signupForm.style.display === "none") {
                 // إظهار نموذج signupForm أولاً
                 signupForm.style.display = "block";
@@ -300,77 +300,77 @@ a<!DOCTYPE html>
             }
         }
     </script>
-    
+
     <script>
-     document.addEventListener('DOMContentLoaded', function () {
-        const cardForme = document.getElementById('cardForme');
-        const confirmBtn = document.getElementById('confirmBtne');
+        document.addEventListener('DOMContentLoaded', function () {
+            const cardForme = document.getElementById('cardForme');
+            const confirmBtn = document.getElementById('confirmBtne');
 
-        function checkFormValidity() {
-            const inputs = cardForme.querySelectorAll('input[required]');
-            let isValid = true;
-            inputs.forEach(function (input) {
-                if (!input.value.trim()) {
-                    isValid = false;
-                }
-            });
-            return isValid;
-        }
-
-        function toggleConfirmBtnVisibility() {
-            if (checkFormValidity()) {
-                confirmBtn.style.display = 'block';
-            } else {
-                confirmBtn.style.display = 'none';
+            function checkFormValidity() {
+                const inputs = cardForme.querySelectorAll('input[required]');
+                let isValid = true;
+                inputs.forEach(function (input) {
+                    if (!input.value.trim()) {
+                        isValid = false;
+                    }
+                });
+                return isValid;
             }
-        }
 
-        cardForme.addEventListener('input', toggleConfirmBtnVisibility);
-
-        confirmBtn.addEventListener('click', function () {
-            alert("welcome back");
-        });
-    });
-
-</script>
-
-
-
-
-
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const cardForm = document.getElementById('cardForm');
-        const confirmBtn = document.getElementById('confirmBtn');
-
-        function checkFormValidity() {
-            const inputs = cardForm.querySelectorAll('input[required]');
-            let isValid = true;
-            inputs.forEach(function (input) {
-                if (!input.value.trim()) {
-                    isValid = false;
+            function toggleConfirmBtnVisibility() {
+                if (checkFormValidity()) {
+                    confirmBtn.style.display = 'block';
+                } else {
+                    confirmBtn.style.display = 'none';
                 }
-            });
-            return isValid;
-        }
-
-        function toggleConfirmBtnVisibility() {
-            if (checkFormValidity()) {
-                confirmBtn.style.display = 'block';
-            } else {
-                confirmBtn.style.display = 'none';
             }
-        }
 
-        cardForm.addEventListener('input', toggleConfirmBtnVisibility);
+            cardForme.addEventListener('input', toggleConfirmBtnVisibility);
 
-        confirmBtn.addEventListener('click', function () {
-            alert("Votre inscription a été complétée avec succès");
+            confirmBtn.addEventListener('click', function () {
+                alert("welcome back");
+            });
         });
-    });
-</script>
-<script  src="./js/bootstrap.bundle.min.js"></script>
+
+    </script>
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cardForm = document.getElementById('cardForm');
+            const confirmBtn = document.getElementById('confirmBtn');
+
+            function checkFormValidity() {
+                const inputs = cardForm.querySelectorAll('input[required]');
+                let isValid = true;
+                inputs.forEach(function (input) {
+                    if (!input.value.trim()) {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+
+            function toggleConfirmBtnVisibility() {
+                if (checkFormValidity()) {
+                    confirmBtn.style.display = 'block';
+                } else {
+                    confirmBtn.style.display = 'none';
+                }
+            }
+
+            cardForm.addEventListener('input', toggleConfirmBtnVisibility);
+
+            confirmBtn.addEventListener('click', function () {
+                alert("Votre inscription a été complétée avec succès");
+            });
+        });
+    </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
